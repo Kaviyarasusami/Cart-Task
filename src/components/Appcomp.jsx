@@ -41,6 +41,8 @@ const Appcomp = () => {
             <h1></h1>
         
         <Navbar cartCount={cart.length} openCart={() => setIsModalOpen(true)}/>
+
+        
         <ProductList products={products} addToCart={addToCart} />
         {isModalOpen && (
         <CartModal  cart={cart}
